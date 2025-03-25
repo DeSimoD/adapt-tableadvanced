@@ -1,0 +1,56 @@
+.tableadvanced-inner {
+	@tableadvanced-border-color: @foreground-color;
+	@tableadvanced-header-background-color: @background-color-inverted;
+	@tableadvanced-header-color: @foreground-color-inverted;
+
+	.tableadvanced-wrapper {
+		overflow: hidden;
+	}
+	
+	.tableadvanced-widget {
+
+		overflow-x: auto;
+
+
+		table, th, td {
+			border: 1px solid @tableadvanced-border-color;
+			padding-bottom: @item-padding/2;
+			tableadvanced-layout: fixed;
+		}
+
+		table {
+			width: 100%;
+			border: 1px solid @tableadvanced-border-color;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+
+			tr {
+
+				th {
+					border: 1px solid @tableadvanced-border-color;
+					text-align: center;
+					vertical-align: middle;
+					padding: @item-padding;
+					background-color: @tableadvanced-header-background-color;
+					color: @tableadvanced-header-color;
+				}
+				
+				td {
+					border: 1px solid @tableadvanced-border-color;
+					text-align: center;
+					vertical-align: middle;
+					padding: @item-padding;
+				}
+
+				img {
+					-webkit-user-select: none;
+					-moz-user-select: none;
+					-ms-user-select: none;
+					user-select: none;
+				}
+			}
+		}
+	}
+}
