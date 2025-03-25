@@ -1,17 +1,17 @@
 {
-    "name": "adapt-table",
-    "repository": "git://github.com/LearnChamp/adapt-table",
-    "framework": ">=2.0.0",
+    "name": "adapt-tableadvanced",
+    "repository": "git://github.com/DeSimoD/adapt-tableadvanced",
+    "framework": ">=5.0.0",
     "version": "1.0.0",
     "homepage": "",
     "issues": "",
-    "displayName": "Table",
-    "component": "table",
-    "description": "A table Component",
-    "main": "/js/adapt-table.js",
+    "displayName": "Table Advanced",
+    "component": "tableadvanced",
+    "description": "Table Advanced is a presentation component that displays a table. Each table cell can contain text and / or a graphic. For better mobile support, the table can have a fixed width. Users can pan the table horizontally.",
+    "main": "/js/adapt-tableadvanced.js",
     "keywords": [
         "adapt-plugin",
         "adapt-component"
     ],
-    "license": ""
+    "license": "GPL-3.0"
 }
