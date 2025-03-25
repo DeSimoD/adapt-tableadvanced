@@ -3,7 +3,7 @@ define([
     'core/js/views/componentView'
 ], function(Adapt, ComponentView) {
 
-    var Table = ComponentView.extend({
+    var TableAdvanced = ComponentView.extend({
 
         events: {
             "touchstart .component-widget": "handleTouchStart",
@@ -24,8 +24,8 @@ define([
             this.setupInview();
 
             this.$componentWidget = this.$('.component-widget');
-            this.$tableWrapper = this.$('.table-wrapper');
-            this.table = this.$('table')[0];
+            this.$tableadvancedWrapper = this.$('.tableadvanced-wrapper');
+            this.tableadvanced = this.$('tableadvanced')[0];
 
             this.$('.component-widget').imageready(_.bind(function() {
                 this.setReadyStatus();
@@ -103,7 +103,7 @@ define([
             } else {
                 this.$el.removeClass('scroll');
             }
-            this.$tableWrapper.css('height', this.table.getBoundingClientRect().height+'px');
+            this.$tableadvancedWrapper.css('height', this.tableadvanced.getBoundingClientRect().height+'px');
         },
 
         handleTouchStart: function(event) {
@@ -151,10 +151,10 @@ define([
         }
     },
     {
-        template: 'table'
+        template: 'tableadvanced'
     });
 
-    Adapt.register('table', Table);
+    Adapt.register('tableadvanced', TableAdvanced);
 
-    return Table;
+    return TableAdvanced;
 });
