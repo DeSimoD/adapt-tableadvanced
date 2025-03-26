@@ -16,7 +16,7 @@ Then running the command:
 Use the [Plug-in Manager](https://github.com/adaptlearning/adapt_authoring/wiki/Plugin-Manager) to use this component in the Adapt authoring tool.
 
 ## Settings Overview
-A properly formatted JSON is available in *example.json*
+A properly formatted JSON is available in [*example.json*}(https://github.com/DeSimoD/adapt-tableadvanced/blob/master/example.json)
   
 ### Row / Column as headings
 Use the `_rowHeaderIndexes` and `_colHeaderIndexes` attributes to set a row or column as a heading. Multiple indexes must be seperated with `,`.
@@ -29,6 +29,24 @@ Use the `_rowHeaderIndexes` and `_colHeaderIndexes` attributes to set a row or c
 You may define a min width for the table in pixel.   
 `_minWidth`    
 
+### Remove double borders
+Double borders can occur because both the table and the `<th>` and `<td>` elements have separate borders. To remove double borders enable this option.
+```json
+"_isBorderCollapse": true,
+```
+
+### Table border appearance
+Defines the appearance of the table border. The default appearance is `solid`.
+```json
+"_TableBorderAppearance": "solid",
+```
+
+### Table border line width
+Thickness of the table border line in pixels.
+```json
+"_TableBorderLineWidth": 3,
+```
+
 ### Rows
 Each row can have a css class and a list of cells.  
 
@@ -37,8 +55,44 @@ Each row can have a css class and a list of cells.
 ##### column / row span 
 Wrapps html [colspan](https://www.w3schools.com/tags/att_td_colspan.asp) and [rowspan](https://www.w3schools.com/tags/att_td_rowspan.asp) attribute.  
 
+##### Cell border appearance
+Defines the appearance of the cell border. The default appearance is `solid`
+```json
+"_CellBorderAppearance": "solid",
+```
+
+##### Cell border line width
+Thickness of the cell border line in pixels.
+```json
+"_CellBorderLineWidth": 1,
+```
+
+##### Background color
+Background color of the cell as a valid css value.
+```json
+"_CellBackgroundColor": "darkgreen",
+```
+
+##### Text color
+Text color of the cell as a valid css value.
+```json
+"_CellTextColor": "white",
+```
+
 ##### text / graphic 
 Text and or graphic content of the table cell. 
+
+##### Horizontal alignment
+Defines the horizontal alignment in the cell. `Left`: The contents of the cell are left-aligned. `Center`: The contents of the cell are centered. `Right`: The contents of the cell are right-aligned. The default alignment is `center`.
+```json
+"_textAlignment": "center",
+```
+
+##### Vertical alignment
+Defines the vertical alignment in the cell. `Top`: Allign content to the top of the cell. `Middle`: Allign content in the middle of the cell. `Bottom`: Allign content to the bottom of the cell. The default alignment is `middle`.
+```json
+"_verticalAlignment": "middle",
+```
 
 ### Fixed colum width 
 **Example:** Set's the second column to 200 pixel.

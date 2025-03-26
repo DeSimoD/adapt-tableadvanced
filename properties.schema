@@ -57,7 +57,34 @@
       "default": "",
       "inputType": "Number",
       "validators": [],
-      "help": "Smalsest width of the table.",
+      "help": "Smallest width of the table.",
+      "translatable": false
+    },
+  	"_isBorderCollapse": {
+	  "title": "Remove double borders",
+	  "type": "boolean",
+	  "required": false,
+	  "default": true,
+	  "inputType": "Checkbox",
+	  "validators": [],
+	  "help": "Double borders can occur because both the table and the <th> and <td> elements have separate borders. To remove double borders enable this option."
+    },
+    "_TableBorderAppearance": {
+      "title": "Table border appearance",
+      "type": "string",
+      "required": true,
+      "default": "solid",
+      "inputType": {"type":"Select", "options":["dotted","dashed","solid","double","groove","ridge","inset","outset","none","hidden"]},
+      "help": "Defines the appearance of the table border. The default appearance is `solid`."
+    },
+    "_TableBorderLineWidth": {
+      "title": "Table border line width",
+      "type": "Number",
+      "required": false,
+      "default": "1",
+      "inputType": "Number",
+      "validators": [],
+      "help": "Thickness of the table border line in pixels.",
       "translatable": false
     },
     "_rows": {
@@ -104,6 +131,44 @@
                   "help": "How many rows should the cell span?",
                   "translatable": false
                 },
+                "_CellBorderAppearance": {
+                  "title": "Cell border appearance",
+                  "type": "string",
+                  "required": true,
+                  "default": "solid",
+                  "inputType": {"type":"Select", "options":["dotted","dashed","solid","double","groove","ridge","inset","outset","none","hidden"]},
+                  "help": "Defines the appearance of the cell border. The default appearance is `solid`."
+                },
+                "_CellBorderLineWidth": {
+                  "title": "Cell border line width",
+                  "type": "Number",
+                  "required": false,
+                  "default": "1",
+                  "inputType": "Number",
+                  "validators": [],
+                  "help": "Thickness of the cell border line in pixels.",
+                  "translatable": false
+                },
+                "_CellBackgroundColor": {
+                  "title": "Background color",
+                  "type": "string",
+                  "required": false,
+                  "default": "",
+                  "inputType": "Text",
+                  "validators": [],
+                  "help": "Background color of the cell as a valid css value.",
+                  "translatable": false
+                },
+                "_CellTextColor": {
+                  "title": "Text color",
+                  "type": "string",
+                  "required": false,
+                  "default": "",
+                  "inputType": "Text",
+                  "validators": [],
+                  "help": "Text color of the cell as a valid css value.",
+                  "translatable": false
+                },
                 "text": {
                   "type": "Text",
                   "required": false,
@@ -112,6 +177,22 @@
                   "validators": [],
                   "help": "",
                   "translatable": true
+                },
+                "_textAlignment": {
+                  "title": "Horizonzal alignment",
+                  "type": "string",
+                  "required": true,
+                  "default": "center",
+                  "inputType": {"type":"Select", "options":["left","center","right"]},
+                  "help": "Defines the horizontal alignment in the cell. Left: The contents of the cell are left-aligned. Center: The contents of the cell are centered. Right: The contents of the cell are right-aligned. The default alignment is `center`."
+                },
+                "_verticalAlignment": {
+                  "title": "Vertical alignment",
+                  "type": "string",
+                  "required": true,
+                  "default": "middle",
+                  "inputType": {"type":"Select", "options":["top","middle","bottom"]},
+                  "help": "Defines the vertical alignment in the cell. Top: Allign content to the top of the cell. Middle: Allign content in the middle of the cell. Bottom: Allign content to the bottom of the cell. The default alignment is `middle`."
                 },
                 "_classes": {
                   "title": "Classes",

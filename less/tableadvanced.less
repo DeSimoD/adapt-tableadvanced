@@ -1,7 +1,12 @@
 .tableadvanced-inner {
-	@tableadvanced-border-color: @foreground-color;
-	@tableadvanced-header-background-color: @background-color-inverted;
-	@tableadvanced-header-color: @foreground-color-inverted;
+	@tableadvanced-border-color: black;
+	@tableadvanced-header-background-color: @item-color;
+	@tableadvanced-header-color: @item-color-inverted;
+
+    padding-top: 2rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
 
 	.tableadvanced-wrapper {
 		overflow: hidden;
@@ -13,14 +18,14 @@
 
 
 		table, th, td {
-			border: 1px solid @tableadvanced-border-color;
+			border: @tableadvanced-border-color;
 			padding-bottom: @item-padding/2;
 			table-layout: fixed;
 		}
 
 		table {
 			width: 100%;
-			border: 1px solid @tableadvanced-border-color;
+			border: @tableadvanced-border-color;
 			-webkit-user-select: none;
 			-moz-user-select: none;
 			-ms-user-select: none;
@@ -29,18 +34,14 @@
 			tr {
 
 				th {
-					border: 1px solid @tableadvanced-border-color;
-					text-align: center;
-					vertical-align: middle;
+					border: @tableadvanced-border-color;
 					padding: @item-padding;
 					background-color: @tableadvanced-header-background-color;
 					color: @tableadvanced-header-color;
 				}
 				
 				td {
-					border: 1px solid @tableadvanced-border-color;
-					text-align: center;
-					vertical-align: middle;
+					border: @tableadvanced-border-color;
 					padding: @item-padding;
 				}
 
