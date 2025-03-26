@@ -1,7 +1,7 @@
 # adapt-tableadvanced 
 A presentation component that displays a table. Each table cell can contain text and / or a graphic. For better mobile support, the table can have a fixed width. Users can pan the table horizontally. 
 
-![adapt-table](https://github.com/LearnChamp/sharedAssets/blob/master/assets/adapt-table.gif?raw=true)   
+![adapt-tableadvanced](https://github.com/DeSimoD/sharedAssets/blob/main/screenshot_adapt-tableadvanced.png?raw=true)   
 
 ## Installation
 To install the component with the [Adapt CLI](https://github.com/adaptlearning/adapt-cli), run the following from the command line:  
