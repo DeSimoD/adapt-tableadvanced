@@ -16,7 +16,7 @@ Then running the command:
 Use the [Plug-in Manager](https://github.com/adaptlearning/adapt_authoring/wiki/Plugin-Manager) to use this component in the Adapt authoring tool.
 
 ## Settings Overview
-A properly formatted JSON is available in [*example.json*}(https://github.com/DeSimoD/adapt-tableadvanced/blob/master/example.json)
+A properly formatted JSON is available in [*example.json*](https://github.com/DeSimoD/adapt-tableadvanced/blob/master/example.json)
   
 ### Row / Column as headings
 Use the `_rowHeaderIndexes` and `_colHeaderIndexes` attributes to set a row or column as a heading. Multiple indexes must be seperated with `,`.
