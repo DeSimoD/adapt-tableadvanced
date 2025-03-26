@@ -2,7 +2,7 @@
     "name": "adapt-tableadvanced",
     "repository": "git://github.com/DeSimoD/adapt-tableadvanced",
     "framework": ">=5.0.0",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "homepage": "",
     "issues": "",
     "displayName": "Table Advanced",
