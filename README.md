@@ -53,5 +53,6 @@ Text and or graphic content of the table cell.
 No Accessibility support.  
 
 ----------------------------
-**Author / maintainer:** [LearnChamp](https://github.com/LearnChamp)  
+**Author / maintainer:** [DeSimoD](https://github.com/DeSimoD)
+**This is a fork of:** [LearnChamp](https://github.com/LearnChamp)
 **Cross-platform coverage:** Chrome, Chrome for Android, Firefox (ESR + latest version), Edge 12, IE 11, Safari iOS 9+10, Safari OS X 9+10, Opera    
