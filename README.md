@@ -38,13 +38,13 @@ Double borders can occur because both the table and the `<th>` and `<td>` elemen
 ### Table border appearance
 Defines the appearance of the table border. The default appearance is `solid`.
 ```json
-"_TableBorderAppearance": "solid",
+"_tableBorderAppearance": "solid",
 ```
 
 ### Table border line width
 Thickness of the table border line in pixels.
 ```json
-"_TableBorderLineWidth": 3,
+"_tableBorderLineWidth": 3,
 ```
 
 ### Rows
@@ -58,25 +58,25 @@ Wrapps html [colspan](https://www.w3schools.com/tags/att_td_colspan.asp) and [ro
 ##### Cell border appearance
 Defines the appearance of the cell border. The default appearance is `solid`
 ```json
-"_CellBorderAppearance": "solid",
+"_cellBorderAppearance": "solid",
 ```
 
 ##### Cell border line width
 Thickness of the cell border line in pixels.
 ```json
-"_CellBorderLineWidth": 1,
+"_cellBorderLineWidth": 1,
 ```
 
 ##### Background color
 Background color of the cell as a valid css value.
 ```json
-"_CellBackgroundColor": "darkgreen",
+"_cellBackgroundColor": "darkgreen",
 ```
 
 ##### Text color
 Text color of the cell as a valid css value.
 ```json
-"_CellTextColor": "white",
+"_cellTextColor": "white",
 ```
 
 ##### text / graphic 
