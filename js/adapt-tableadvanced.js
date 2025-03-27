@@ -25,7 +25,7 @@ define([
 
             this.$componentWidget = this.$('.component-widget');
             this.$tableadvancedWrapper = this.$('.tableadvanced-wrapper');
-            this.tableadvanced = this.$('tableadvanced')[0];
+            this.tableadvanced = this.$('table')[0];
 
             this.$('.component-widget').imageready(_.bind(function() {
                 this.setReadyStatus();

@@ -2,14 +2,14 @@
     {{> component this}}
     <div class="tableadvanced-wrapper">
     <div class="tableadvanced-widget component-widget">
-        <table class="" style="{{#if _minWidth}}min-width: {{_minWidth}}px; {{/if}}border: {{_TableBorderLineWidth}}px {{_TableBorderAppearance}};{{#if _isBorderCollapse}} border-collapse: collapse{{/if}}">
+        <table class="" style="{{#if _minWidth}}min-width: {{_minWidth}}px; {{/if}}border: {{_tableBorderLineWidth}}px {{_tableBorderAppearance}};{{#if _isBorderCollapse}} border-collapse: collapse{{/if}}">
             {{#each _rows}}
             <tr class="tableadvanced-row nth-child-{{@index}} {{_classes}}">
                 {{#each _cells}}
                     {{#if _isHeading}}
                         <th {{#if _rowSpan}}rowspan="{{_rowSpan}}"{{/if}}
                         {{#if _colSpan}}colspan="{{_colSpan}}"{{/if}}
-                        style="{{#if _textAlignment}}text-align: {{_textAlignment}}; {{/if}}{{#if _verticalAlignment}}vertical-align: {{_verticalAlignment}}; {{/if}}{{#if _width}}width: {{_width}}; {{/if}}border: {{_CellBorderLineWidth}}px {{_CellBorderAppearance}}; {{#if _CellBackgroundColor}}background-color: {{_CellBackgroundColor}}; {{/if}}{{#if _CellTextColor}}color: {{_CellTextColor}};{{/if}}"
+                        style="{{#if _textAlignment}}text-align: {{_textAlignment}}; {{/if}}{{#if _verticalAlignment}}vertical-align: {{_verticalAlignment}}; {{/if}}{{#if _width}}width: {{_width}}; {{/if}}border: {{_cellBorderLineWidth}}px {{_cellBorderAppearance}}; {{#if _cellBackgroundColor}}background-color: {{_cellBackgroundColor}}; {{/if}}{{#if _cellTextColor}}color: {{_cellTextColor}};{{/if}}"
                         class="tableadvanced-data tableadvanced-heading nth-child-{{@index}} {{_classes}}">
                             {{{text}}}
                             {{#if _graphic._src}}
@@ -24,7 +24,7 @@
                     {{else}}
                         <td {{#if _rowSpan}}rowspan="{{_rowSpan}}"{{/if}}
                         {{#if _colSpan}}colspan="{{_colSpan}}"{{/if}}
-                        style="{{#if _textAlignment}}text-align: {{_textAlignment}}; {{/if}}{{#if _verticalAlignment}}vertical-align: {{_verticalAlignment}}; {{/if}}{{#if _width}}width: {{_width}}; {{/if}}border: {{_CellBorderLineWidth}}px {{_CellBorderAppearance}}; {{#if _CellBackgroundColor}}background-color: {{_CellBackgroundColor}}; {{/if}}{{#if _CellTextColor}}color: {{_CellTextColor}};{{/if}}"
+                        style="{{#if _textAlignment}}text-align: {{_textAlignment}}; {{/if}}{{#if _verticalAlignment}}vertical-align: {{_verticalAlignment}}; {{/if}}{{#if _width}}width: {{_width}}; {{/if}}border: {{_cellBorderLineWidth}}px {{_cellBorderAppearance}}; {{#if _cellBackgroundColor}}background-color: {{_cellBackgroundColor}}; {{/if}}{{#if _cellTextColor}}color: {{_cellTextColor}};{{/if}}"
                         class="tableadvanced-data nth-child-{{@index}} {{_classes}}">
                             {{{text}}}
                             {{#if _graphic._src}}

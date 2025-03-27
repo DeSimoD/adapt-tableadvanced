@@ -69,7 +69,7 @@
 	  "validators": [],
 	  "help": "Double borders can occur because both the table and the <th> and <td> elements have separate borders. To remove double borders enable this option."
     },
-    "_TableBorderAppearance": {
+    "_tableBorderAppearance": {
       "title": "Table border appearance",
       "type": "string",
       "required": true,
@@ -77,7 +77,7 @@
       "inputType": {"type":"Select", "options":["dotted","dashed","solid","double","groove","ridge","inset","outset","none","hidden"]},
       "help": "Defines the appearance of the table border. The default appearance is `solid`."
     },
-    "_TableBorderLineWidth": {
+    "_tableBorderLineWidth": {
       "title": "Table border line width",
       "type": "Number",
       "required": false,
@@ -131,7 +131,7 @@
                   "help": "How many rows should the cell span?",
                   "translatable": false
                 },
-                "_CellBorderAppearance": {
+                "_cellBorderAppearance": {
                   "title": "Cell border appearance",
                   "type": "string",
                   "required": true,
@@ -139,7 +139,7 @@
                   "inputType": {"type":"Select", "options":["dotted","dashed","solid","double","groove","ridge","inset","outset","none","hidden"]},
                   "help": "Defines the appearance of the cell border. The default appearance is `solid`."
                 },
-                "_CellBorderLineWidth": {
+                "_cellBorderLineWidth": {
                   "title": "Cell border line width",
                   "type": "Number",
                   "required": false,
@@ -149,7 +149,7 @@
                   "help": "Thickness of the cell border line in pixels.",
                   "translatable": false
                 },
-                "_CellBackgroundColor": {
+                "_cellBackgroundColor": {
                   "title": "Background color",
                   "type": "string",
                   "required": false,
@@ -159,7 +159,7 @@
                   "help": "Background color of the cell as a valid css value.",
                   "translatable": false
                 },
-                "_CellTextColor": {
+                "_cellTextColor": {
                   "title": "Text color",
                   "type": "string",
                   "required": false,
