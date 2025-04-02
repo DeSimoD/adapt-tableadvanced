@@ -102,7 +102,7 @@
             "default": "",
             "inputType": "Text",
             "validators": [],
-            "help": "Add opational CSS classes to a table row",
+            "help": "Add optional CSS classes to a table row",
             "translatable": false
           },
           "_cells": {
@@ -192,7 +192,7 @@
                   "required": true,
                   "default": "middle",
                   "inputType": {"type":"Select", "options":["top","middle","bottom"]},
-                  "help": "Defines the vertical alignment in the cell. Top: Allign content to the top of the cell. Middle: Allign content in the middle of the cell. Bottom: Allign content to the bottom of the cell. The default alignment is `middle`."
+                  "help": "Defines the vertical alignment in the cell. Top: Align content to the top of the cell. Middle: Align content in the middle of the cell. Bottom: Align content to the bottom of the cell. The default alignment is `middle`."
                 },
                 "_classes": {
                   "title": "Classes",
